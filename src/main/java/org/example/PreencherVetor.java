@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class PreencherVetor {
@@ -8,24 +9,30 @@ public class PreencherVetor {
         int indice = 0;
 
         Scanner scanner = new Scanner(System.in);
+        int valor = 1;
 
-        System.out.println("Digite os valores inteiros para preencher o vetor (digite 0 para parar):");
-        int valor = scanner.nextInt();
-        while (valor != 0 && indice < 10) {
-            vetor[indice] = valor;
-            indice++;
-            if (indice < 10) {
-                System.out.println("Digite outro valor inteiro:");
-                valor = scanner.nextInt();
+        try {
+            System.out.println("Digite os valores inteiros para preencher o vetor (digite 0 para parar):");
+            while (valor != 0) {
+                try {
+                    valor = scanner.nextInt();
+                    vetor[indice] = valor;
+                    indice++;
+                } catch (InputMismatchException e) {
+                    System.out.println("Erro: Valor informado não é numérico. Tente novamente.");
+                    scanner.next();
+                }
             }
-        }
 
-        System.out.println("Vetor preenchido:");
-        for (int i = 0; i <= indice; i++) {
-            System.out.print(vetor[i] + " ");
+            System.out.println("Vetor preenchido:");
+            for (int i = 0; i < indice; i++) {
+                System.out.print(vetor[i] + " ");
+            }
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Erro: Você informou mais do que 10 valores. Apenas os primeiros 10 foram armazenados.");
+        } finally {
+            scanner.close();
         }
-
-        scanner.close();
     }
 }
 
