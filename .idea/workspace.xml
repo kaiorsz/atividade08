@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95de7d89-ce99-472c-8746-580f75b291f7" name="Changes" comment="implementa ArrayIndexOutOfBoundsException e InputMismatchException">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/LoginInvalidoException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TesteLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="95de7d89-ce99-472c-8746-580f75b291f7" name="Changes" comment="implementa Login e cria LoginInvalidoException">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ContaBancaria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/SaldoInsuficienteException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TesteContaBancaria.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +45,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.TesteLogin">
+  <component name="RunManager" selected="Application.TesteContaBancaria">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="atividade08" />
@@ -73,6 +72,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TesteContaBancaria" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.TesteContaBancaria" />
+      <module name="atividade08" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TesteLogin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.TesteLogin" />
       <module name="atividade08" />
@@ -88,6 +100,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TesteContaBancaria" />
         <item itemvalue="Application.TesteLogin" />
         <item itemvalue="Application.PreencherVetor" />
         <item itemvalue="Application.Main" />
@@ -102,7 +115,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714047794181</updated>
-      <workItem from="1714047795538" duration="1294000" />
+      <workItem from="1714047795538" duration="2034000" />
     </task>
     <task id="LOCAL-00001" summary="primeiro commit">
       <option name="closed" value="true" />
@@ -136,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714048711164</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="implementa Login e cria LoginInvalidoException">
+      <option name="closed" value="true" />
+      <created>1714049201572</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714049201572</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +179,7 @@
     <MESSAGE value="cria método erros numéricos ArithmeticException e InputMismatchException" />
     <MESSAGE value="inclui preenchimento de valor de lista até o 0" />
     <MESSAGE value="implementa ArrayIndexOutOfBoundsException e InputMismatchException" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementa ArrayIndexOutOfBoundsException e InputMismatchException" />
+    <MESSAGE value="implementa Login e cria LoginInvalidoException" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementa Login e cria LoginInvalidoException" />
   </component>
 </project>
